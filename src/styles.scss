@@ -67,6 +67,11 @@
 		 url('./assets/fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 		 url('./assets/fonts/ttf/IRANSansWeb.ttf') format('truetype');
 }
+@import '~@angular/material/theming';
+  $custom-typography: mat-typography-config(
+    $font-family: 'IRANSans'
+  );
+  @include mat-core($custom-typography);
 
 .iransans-font {
   font-family: 'IRANSans', Tahoma, Sans-Serif;
